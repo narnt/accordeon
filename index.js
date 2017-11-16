@@ -5,10 +5,8 @@ for (let i = 0; i < menu.length; i++) {
     menu[i].addEventListener('click', function(e) {
         for (let prop of menu) {
             if (prop != menu[i]) { prop.classList.remove('active'); }
-            console.log(prop);
         }
         (this.classList.contains('active')) ? this.classList.remove('active'): this.classList.add('active');
-        console.log(menu.item(i));
     });
 }
 
